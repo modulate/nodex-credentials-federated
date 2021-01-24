@@ -22,12 +22,17 @@
   "assembly": {
     "namespace": "io.modulate/security/credentials/federated",
     "components": [
+      "oauth2/state/tokens",
+      "oauth2/state/tokens/dialects/jwt"
     ]
   },
+  "directories": {
+    "com": "com"
+  },
   "dependencies": {
+    "tokens": "0"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "node_modules/.bin/mocha test/*.test.js"
   }
