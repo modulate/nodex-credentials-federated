@@ -1,15 +1,14 @@
 // WIP
 
-exports = module.exports = function(dialects) {
+exports = module.exports = function(dialects, tokens) {
   var Tokens = require('tokens').Tokens;
   
   // TODO: Initialize this with default dialect and format
-  var tokens = new Tokens(dialects);
-  
-  return tokens;
+  return new Tokens(dialects, tokens);
 };
 
 exports['@singleton'] = true;
 exports['@require'] = [
-  './tokens/dialects'
+  './tokens/dialects',
+  'http://i.bixbyjs.org/tokens'
 ];
